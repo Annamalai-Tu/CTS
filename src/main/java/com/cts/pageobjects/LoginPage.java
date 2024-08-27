@@ -12,9 +12,9 @@ public class LoginPage {
 
 	
 		
-	private By usernameField = By.xpath("//flt-semantics[@id='flt-semantic-node-8']/input)[last()]");
-	private By passwordField = By.xpath("//flt-semantics[@id='flt-semantic-node-9']/input)[last()]");
-	private By submitbutton = By.xpath("//flt-semantics[@id='flt-semantic-node-6'])[last()]");
+	private By usernameField = By.xpath("//flt-semantics[@id='flt-semantic-node-8']/input[last()]");
+	private By passwordField = By.xpath("//flt-semantics[@id='flt-semantic-node-9']/input[last()]");
+	private By submitbutton = By.xpath("//flt-semantics[@id='flt-semantic-node-6'][last()]");
 
 	public void enterUsername(String username) {
 		driver.findElement(usernameField).sendKeys(username);
